@@ -23,9 +23,13 @@ Burn : 50%
 
 Liquidity Pool : 50%
 
+---------------------------
 Total Transaction Tax : 15%
-
+---------------------------
 Holders reward fees : 7%
+
 Auto liquidity : 4%  
+
 Burn Fees : 1%       
+
 Marketing Fee : 3%  
