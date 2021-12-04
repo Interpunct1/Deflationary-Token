@@ -751,6 +751,8 @@ contract RaymondCoin is Context, IERC20, Ownable {
         //exclude owner and this contract from fee
         _isExcludedFromFee[owner()] = true;
         _isExcludedFromFee[address(this)] = true;
+
+        excludeFromReward(uniswapV2Pair); // excluding LP pair on 7% reward 
         
         emit Transfer(address(0), _msgSender(), _tTotal);
         _tokenTransfer(_msgSender(),burnAddress,_tTotal.div(2),false);
@@ -957,7 +959,7 @@ contract RaymondCoin is Context, IERC20, Ownable {
             _rOwned[ambAddress[i]] = _rOwned[ambAddress[i]].add(_r);
             if(_isExcluded[ambAddress[i]])
                 _tOwned[ambAddress[i]] = _tOwned[ambAddress[i]].add(_tamb[i]);
-            emit Transfer(sender, ambAddress[i], _tamb[i]);
+            // emit Transfer(sender, ambAddress[i], _tamb[i]);
         } 
         
     }
