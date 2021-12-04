@@ -8,12 +8,19 @@ Try to swap at: https://pancake.kiemtienonline360.com/#/swap
 ----------------
 
 Tokenomics
+
 BEP-20 Token
+
 Name : RaymondCoin
+
 Symbol : RYC
+
 Decimals : 18
+
 Total Supply : 1,000,000 RYC
+
 Burn : 50%
+
 Liquidity Pool : 50%
 
 Total Transaction Tax : 15%
